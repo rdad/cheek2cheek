@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cheek2cheek</title>
+</head>
+<body>
+	
+	<script src = '../app/cheek2cheek.js'></script>
+	<script src = '../app/audio.js'></script>
+	<script src = '../app/dictionnary.js'></script>
+	<script src = '../app/dico.alphabet.js'></script>
+
+	<script>
+		c2c.init();
+
+		c2c.set_dictionnary('alphabet')
+			.set_message('hello, my name is cheek2cheek. I can transmit informations by sound when the internet is down')
+			.prepare()
+			.transmit();
+
+	</script>
+</body>
+</html>
